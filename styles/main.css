@@ -1,0 +1,123 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.twitter-card {
+  background: #fff;
+  height: 160px;
+  width: 310px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #828282;
+  padding: 20px 15px 10px 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .twitter-card__message {
+    height: 80px;
+    font-size: 14px;
+    color: #4f4f4f; }
+  .twitter-card__name {
+    margin-left: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold; }
+  .twitter-card__avatar {
+    width: 30px;
+    height: 30px; }
+  .twitter-card__ico {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 15px;
+    height: 12px;
+    background: url("../images/twitter.png"); }
+
+.carousel__btn {
+  width: 47px;
+  height: 47px; }
+  .carousel__btn_next {
+    background: url(../images/slider-btn/next-btn.png); }
+  .carousel__btn_prev {
+    background: url(../images/slider-btn/prev-btn.png); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif; }
+
+.container {
+  position: relative;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .container__carousel {
+    width: 350px;
+    overflow: hidden; }
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  list-style: none; }
+  .carousel__item {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .carousel__btn {
+    position: absolute;
+    margin-top: 55px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
+    .carousel__btn:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+    .carousel__btn_prev {
+      left: 0; }
+    .carousel__btn_next {
+      right: 0; }
+  .carousel__dots-wrap {
+    position: absolute;
+    bottom: -30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .carousel__dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    margin-right: 7px;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s; }
+    .carousel__dot:last-child {
+      margin-right: 0; }
+    .carousel__dot_active {
+      background-color: deepskyblue; }
+
+/*# sourceMappingURL=main.css.map */
